@@ -49,7 +49,7 @@ export class GameScreenController extends ScreenController {
 		//create local variable 
 		let timeRemaining = GAME_DURATION;
 
-		const timerId = setInterval(() => {
+		const timerId = window.setInterval(() => {
 			timeRemaining--;
 			this.view.updateTimer(timeRemaining);
 			if (timeRemaining <= 0){
